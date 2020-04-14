@@ -2,7 +2,9 @@
 
 {% block title %}Home{% endblock %}
 
+
 {% block main %}
-<h1>Hello, world!</h1>
-<p>This is a test</p>
+<div class='container'>
+    <img src={{ url_for('static', filename='images/basket.jpg')}} style='width:100%'>
+</div>
 {% endblock %}

@@ -1,7 +1,9 @@
-h1 {
-    color: red;
-}
-
-p {
-    color: blue;
-}
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    color: grey;
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+  }
