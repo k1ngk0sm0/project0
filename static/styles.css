@@ -7,3 +7,15 @@ footer {
     text-align: center;
     padding: 50px;
   }
+
+h1 {
+    text-align: center;
+} 
+.header {
+    padding: 10px;
+}
+
+p {
+    padding-right: 10%;
+    padding-left: 10%;
+}
