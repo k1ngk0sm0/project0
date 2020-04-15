@@ -1,0 +1,79 @@
+{% extends 'layout.html' %}
+
+{% block style %}
+<style>
+    table, th, td {
+                border: 1px solid black;
+                border-collapse:collapse;
+            }
+            th, td {
+                padding: 15px;
+            }
+            td {
+                text-align: center;
+            }
+            table tr:nth-child(even) {
+                background-color:  #eee;
+            }
+            table tr:nth-child(odd) {
+                background-color: #fff;
+            }
+            table th {
+                color: white;
+                background-color: black;
+            }
+            p {
+                padding-top: 10px;
+                padding-bottom: 30px;
+            }
+</style>
+{% endblock %}
+
+{% block title %}Courses{% endblock %}
+
+{% block main %} 
+<h1>Courses</h1>
+<p>
+    Most disc golf courses have 9 or 18 holes, and exceptions most often have holes in multiples of three. Courses with 6, 12, 21, 24 or 27 holes are not uncommon.
+    The PDGA recommends that courses average 200–240 feet (61–73 m) per hole, with holes no shorter than 100 feet (30 m). The longest holes in the world measure more 
+    than 1,500 feet (460 m) long. Course designers use trees, bushes, elevation changes, water hazards, and distance variation, along with out-of-bounds zones and mandatory
+    flight paths to make each hole challenging and unique. Many courses include multiple tee positions or multiple target positions to cater to players of different ability 
+    levels.Most disc golf courses are built in more natural and less manicured environments than golf and require minimal maintenance. Professional course designers consider 
+    safety a critical factor in course design, and are careful to minimize the danger of being hit by a flying disc while providing designs that create strategy in play and 
+    variety in shots for enjoyment. Holes are designed to require a range of different throws to challenge players with different strengths or particular skills. Many courses
+    are central organizing points for local disc golf clubs, and some include shops selling disc golf equipment. More than 80% of the courses listed on Disc Golf Course Review
+    are listed as public and free to play
+</p>
+<table id='courseTable' align="center">
+    <tr>
+        <th>Course Name</th>
+        <th>Number of Holes</th>
+        <th>Terrain</th>
+        <th>Location</th>
+    </tr>
+    <tr>
+        <td><a href="https://www.dgcoursereview.com/course.php?id=694">Johnson Street</a></td>
+        <td>18</td>
+        <td>Mixed</td>
+        <td>High Point, NC</td>
+    </tr>
+    <tr>
+        <td><a href="https://www.dgcoursereview.com/course.php?id=900">Barber Park</a></td>
+        <td>18</td>
+        <td>Mixed</td>
+        <td>Greensboro, NC</td>
+    </tr>
+    <tr>
+        <td><a href="https://www.dgcoursereview.com/course.php?id=3322">Creekside</a></td>
+        <td>18</td>
+        <td>Mixed</td>
+        <td>Archdale, NC</td>
+    </tr>
+    <tr>
+        <td><a href="https://www.dgcoursereview.com/course.php?id=7544">Patriot Park</a></td>
+        <td>18</td>
+        <td>Mixed</td>
+        <td>Kernersville, NC</td>
+    </tr>
+</table>
+{% endblock %}

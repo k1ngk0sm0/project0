@@ -21,21 +21,26 @@
             <img src={{ url_for('static', filename="images/distance.jpg")}} width="30" height="30" class="d-inline-block align-top" alt="">
             Disc Golf
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Discs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Courses</a>
-            </li>
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/discs">Discs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/courses">Courses</a>
+              </li>
           </ul>
+          <form class="form-inline my-2 my-lg-0" action="https://www.dgcoursereview.com/browse.php" method="get">
+            <input class="form-control mr-sm-2 search" type="text" placeholder="Enter Zip Code" name='zipcode'>
+            <button class="btn btn-outline-success my-2 my-sm-0 search" type="submit">Find a Course!</button>
+          </form>
         </div>
     </nav>
 
