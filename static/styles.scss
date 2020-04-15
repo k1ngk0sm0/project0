@@ -5,11 +5,15 @@ $tablePadding: 15px;
     border-collapse:collapse;
 }
 
-table{
+#courseTable{
     @extend %tableBorder;
     th {
         color: white;
         background-color: black;
+    }
+    th, td {
+        padding: $tablePadding;
+        text-align: center;
     }
     tr:nth-child(even) {
         background-color:  #eee;
@@ -17,12 +21,6 @@ table{
     tr:nth-child(odd) {
         background-color: #fff;
     }
-}
-
-th, td {
-    padding: $tablePadding;
-    @extend %tableBorder;
-    text-align: center;
 }
 
 footer {

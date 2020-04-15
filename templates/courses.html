@@ -2,30 +2,10 @@
 
 {% block style %}
 <style>
-    /* table, th, td {
-                border: 1px solid black;
-                border-collapse:collapse;
-            }
-            th, td {
-                padding: 15px;
-            }
-            td {
-                text-align: center;
-            }
-            table tr:nth-child(even) {
-                background-color:  #eee;
-            }
-            table tr:nth-child(odd) {
-                background-color: #fff;
-            }
-            table th {
-                color: white;
-                background-color: black;
-            } */
-            p {
-                padding-top: 10px;
-                padding-bottom: 30px;
-            }
+    p {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
 </style>
 {% endblock %}
 
@@ -44,7 +24,7 @@
     are central organizing points for local disc golf clubs, and some include shops selling disc golf equipment. More than 80% of the courses listed on Disc Golf Course Review
     are listed as public and free to play
 </p>
-<table align="center">
+<table id='courseTable' align="center">
     <tr>
         <th>Course Name</th>
         <th>Number of Holes</th>

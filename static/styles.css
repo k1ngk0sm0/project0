@@ -1,18 +1,17 @@
-table, th, td {
+#courseTable {
   border: 1px solid black;
   border-collapse: collapse; }
 
-table th {
+#courseTable th {
   color: white;
   background-color: black; }
-table tr:nth-child(even) {
-  background-color: #eee; }
-table tr:nth-child(odd) {
-  background-color: #fff; }
-
-th, td {
+#courseTable th, #courseTable td {
   padding: 15px;
   text-align: center; }
+#courseTable tr:nth-child(even) {
+  background-color: #eee; }
+#courseTable tr:nth-child(odd) {
+  background-color: #fff; }
 
 footer {
   position: relative;
